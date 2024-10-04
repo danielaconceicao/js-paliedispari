@@ -4,19 +4,18 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un n
  */
 
 let userNumber = 4; /* prompt('inserici un numero da 1 a 5') */; 
-/* let randomNumber = parseInt(Math.random() * 5 + 1); */
 
 function generateRandomNumber() {
     return randomNumber = parseInt(Math.random() * 5 + 1);
 }
 
-function evenOrOdd() {
-    let sun = userNumber + generateRandomNumber();
+let sun = userNumber + generateRandomNumber();
 
+function evenOrOdd() {
     if (sun % 2 === 0) {
-        console.log(`Il numero ${sun} è pari`);
+        return `Il numero ${sun} è pari`;
     } else {
-        console.log(`Il numero ${sun} è dispari`);
+        return `Il numero ${sun} è dispari`;
     }
 } 
 
